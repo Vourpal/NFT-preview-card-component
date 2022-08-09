@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    font-family: 'Outfit', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-wrapper {
+    width: 300px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 16px;
+    border-radius: 8px;
+
+}
+
+.nft-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+}
+
+
+.nft-images{
+    position: relative;
+}
+.nft-images:hover .view-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.nft-images .view-wrapper img {
+    display: none;
+    height: 50px;
+    width: 50px;
+}
+.nft-images:hover .view-wrapper img {
+    display: block;
+}
+.nft-title {
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+}
+
+.nft-title:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+.nft-description {
+    font-size: 16px;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 24px;
+}
+
+.description-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.price-wrapper {
+    display: flex;
+}
+
+.price-wrapper p {
+    margin: 0;
+    color: hsl(178, 100%, 50%);
+    font-size: 14px;
+}
+
+.price-wrapper img {
+    height: 16px;
+    width: 12px;
+    margin-right: 4px;
+}
+
+.time-wrapper {
+    display: flex;
+
+
+}
+
+.time-wrapper img {
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+}
+
+.time-wrapper p {
+    margin: 0;
+    color: hsl(215, 51%, 70%);
+    font-size: 14px;
+}
+
+.creator-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.creator-wrapper img {
+    height: 25px;
+    width: 25px;
+    margin-right: 16px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 100%;
+
+}
+
+.creator-wrapper p {
+    color: hsl(215, 51%, 70%);
+}
+
+.creator-wrapper p strong {
+    color: hsl(0, 0%, 100%);
+}
+
+.divider {
+    height: 1px;
+    font-size: 0px;
+    border: 0;
+    opacity: 0.5;
+    border-top: 1px solid hsl(215, 51%, 70%);
+}
+
+.creator-wrapper strong:hover {
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
